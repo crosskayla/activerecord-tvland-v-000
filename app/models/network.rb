@@ -1,7 +1,7 @@
 class AddNetworkId < ActiveRecord::Migration[4.2]
-  has_many :shows
 
-  def sorry
-    "We're sorry about passing on John Mulaney's pilot"
+  def change
+    add_column :shows, :network_id, :
   end
+
 end
